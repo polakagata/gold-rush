@@ -35,11 +35,14 @@ public class Main {
 
                     case "D": player.move(PlayerToken.Move.RIGHT);
                         break;
+
+                    default: System.err.println("Wrong button");
+                        throw new Exception();
                 }
                 board.display();
-            }catch (Exception e) {
+            }catch (IllegalArgumentException e) {
                 System.err.println("Cannot move outside the board");
-            }
+            }catch(Exception e){}
         }
 
 

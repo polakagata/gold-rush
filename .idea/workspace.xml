@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8862d94-9cd8-4231-af50-e1dff0addd9b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="c8862d94-9cd8-4231-af50-e1dff0addd9b" name="Changes" comment="Sterowanie postacią">
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/io/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,8 +100,17 @@
       <workItem from="1761073877192" duration="47000" />
       <workItem from="1761073934232" duration="20000" />
       <workItem from="1761073975103" duration="82000" />
-      <workItem from="1761074072702" duration="719000" />
+      <workItem from="1761074072702" duration="1055000" />
     </task>
+    <task id="LOCAL-00001" summary="Sterowanie postacią">
+      <option name="closed" value="true" />
+      <created>1761074885785</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1761074885785</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,5 +126,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Sterowanie postacią" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sterowanie postacią" />
   </component>
 </project>
