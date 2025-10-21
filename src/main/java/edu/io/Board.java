@@ -16,7 +16,7 @@ public class Board {
     }
 
     public Token peekToken(int col, int row){
-        return grid[col][row];
+        return grid[row][col];
     }
 
     public Board(){

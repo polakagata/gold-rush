@@ -31,31 +31,40 @@ public class PlayerToken extends Token {
 
             case UP -> {
                 if(row>0){
+                    this.board.placeToken(col, row, new EmptyToken());
                     row -=1;
+                    this.board.placeToken(col, row, this);
                 }else{
                     throw new IllegalArgumentException("Cannot move outside the board");
                 }
+
             }
 
             case LEFT -> {
                 if(col>0){
+                    this.board.placeToken(col, row, new EmptyToken());
                     col -=1;
+                    this.board.placeToken(col, row, this);
                 }else{
                     throw new IllegalArgumentException("Cannot move outside the board");
                 }
             }
 
             case RIGHT -> {
-                if(col < this.board.size){
+                if(col < this.board.size-1){
+                    this.board.placeToken(col, row, new EmptyToken());
                     col +=1;
+                    this.board.placeToken(col, row, this);
                 }else{
                     throw new IllegalArgumentException("Cannot move outside the board");
                 }
             }
 
             case DOWN -> {
-                if(row<this.board.size){
+                if(row<this.board.size-1){
+                    this.board.placeToken(col, row, new EmptyToken());
                     row+=1;
+                    this.board.placeToken(col, row, this);
                 }else{
                     throw new IllegalArgumentException("Cannot move outside the board");
                 }
