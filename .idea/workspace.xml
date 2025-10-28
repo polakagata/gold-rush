@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8862d94-9cd8-4231-af50-e1dff0addd9b" name="Changes" comment="Sterowanie postacią">
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/io/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="c8862d94-9cd8-4231-af50-e1dff0addd9b" name="Changes" comment="Sterowanie postacią, poprawa błędów" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +18,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -33,6 +34,13 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,7 +68,11 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Gradle.BoardTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GameTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GoldTokenTest.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.PlayerTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PlayerTokenTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'gold_rush.test'.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.TokenTest.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.gold-rush [:edu.io.Main.main()].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -78,6 +90,35 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Tests in 'gold_rush.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Tests in 'gold_rush.test'" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -100,7 +141,8 @@
       <workItem from="1761073877192" duration="47000" />
       <workItem from="1761073934232" duration="20000" />
       <workItem from="1761073975103" duration="82000" />
-      <workItem from="1761074072702" duration="1055000" />
+      <workItem from="1761074072702" duration="1625000" />
+      <workItem from="1761666673023" duration="16914000" />
     </task>
     <task id="LOCAL-00001" summary="Sterowanie postacią">
       <option name="closed" value="true" />
@@ -110,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761074885785</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Sterowanie postacią, poprawa błędów">
+      <option name="closed" value="true" />
+      <created>1761075516828</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1761075516828</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +179,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Sterowanie postacią" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sterowanie postacią" />
+    <MESSAGE value="Sterowanie postacią, poprawa błędów" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sterowanie postacią, poprawa błędów" />
   </component>
 </project>

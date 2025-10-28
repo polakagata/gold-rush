@@ -27,9 +27,9 @@ public class Board {
 
     public void clean(){
         EmptyToken token = new EmptyToken();
-        for(int i = 0; i < size; i++){
-            for(int j = 0; j < size; j++){
-                grid[i][j] = token;
+        for(int row = 0; row < size; row++){
+            for(int col = 0; col < size; col++){
+                grid[row][col] = token;
             }
         }
     }
@@ -39,13 +39,24 @@ public class Board {
 
 
     public void display(){
-        for(int i = 0; i < size; i++){
-            for(int j = 0; j < size; j++){
-                System.out.print(grid[i][j].label());
+        for(int row = 0; row < size; row++){
+            for(int col = 0; col < size; col++){
+                System.out.print(grid[row][col].label());
             }
             System.out.println();
         }
 
+    }
+
+    public Coords getAvailableSquare(){
+        for(int row = 0; row < size; row++){
+            for(int col = 0; col < size; col++){
+                if(grid[row][col] instanceof EmptyToken){
+                    return new Coords(col, row);
+                }
+            }
+        }
+        throw new IllegalStateException();
     }
 
 }

@@ -1,6 +1,7 @@
 package edu.io.token;
 
 import edu.io.Board;
+import edu.io.Player;
 
 public class PlayerToken extends Token {
 
@@ -8,7 +9,7 @@ public class PlayerToken extends Token {
     int row;
     Board board;
     int dir;
-
+    Player player;
 
 
     public Board.Coords pos(){
@@ -24,72 +25,41 @@ public class PlayerToken extends Token {
     }
 
     public void move(Move dir){
-        switch (dir){
-            case NONE -> {
+       if(dir==Move.NONE){
+           return;
+       }
+       int newCol = col;
+       int newRow = row;
 
-            }
+       switch(dir){
+           case UP -> newRow -=1;
+           case DOWN -> newRow +=1;
+           case LEFT -> newCol -=1;
+           case RIGHT -> newCol+=1;
+       }
 
-            case UP -> {
-                if(row>0){
-                    this.board.placeToken(col, row, new EmptyToken());
-                    row -=1;
-                    this.board.placeToken(col, row, this);
-                }else{
-                    throw new IllegalArgumentException("Cannot move outside the board");
-                }
+       if(!(newCol >= 0 && newCol < this.board.size &&
+               newRow >= 0 && newRow < this.board.size)){
+           throw new IllegalArgumentException("Cannot move outside the board");
+       }
 
-            }
+       this.player.interactWithToken(board.peekToken(newCol, newRow));
 
-            case LEFT -> {
-                if(col>0){
-                    this.board.placeToken(col, row, new EmptyToken());
-                    col -=1;
-                    this.board.placeToken(col, row, this);
-                }else{
-                    throw new IllegalArgumentException("Cannot move outside the board");
-                }
-            }
-
-            case RIGHT -> {
-                if(col < this.board.size-1){
-                    this.board.placeToken(col, row, new EmptyToken());
-                    col +=1;
-                    this.board.placeToken(col, row, this);
-                }else{
-                    throw new IllegalArgumentException("Cannot move outside the board");
-                }
-            }
-
-            case DOWN -> {
-                if(row<this.board.size-1){
-                    this.board.placeToken(col, row, new EmptyToken());
-                    row+=1;
-                    this.board.placeToken(col, row, this);
-                }else{
-                    throw new IllegalArgumentException("Cannot move outside the board");
-                }
-            }
-        }
+        this.board.placeToken(col, row, new EmptyToken());
+        col = newCol;
+        row = newRow;
+        this.board.placeToken(col, row, this);
     }
 
-    public PlayerToken(Board board, int col, int row){
 
-        super(Label.PLAYER_TOKEN_LABEL);
-
-        this.col = col;
-        this.row = row;
-        this.board = board;
-
-        this.board.placeToken(this.col, this.row,this);
-
-
-    }
-    public PlayerToken(Board board){
+    public PlayerToken(Player player,Board board){
         super(Label.PLAYER_TOKEN_LABEL);
 
         this.board=board;
-        this.col = 0;
-        this.row = 0;
+        Board.Coords place = board.getAvailableSquare();
+        this.col = place.col();
+        this.row = place.row();
+        this.player = player;
 
         this.board.placeToken(this.col, this.row,this);
     }
