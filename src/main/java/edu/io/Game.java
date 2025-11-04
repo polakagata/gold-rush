@@ -1,6 +1,9 @@
 package edu.io;
 
+import edu.io.player.Player;
+import edu.io.token.AnvilToken;
 import edu.io.token.GoldToken;
+import edu.io.token.PickaxeToken;
 import edu.io.token.PlayerToken;
 
 import java.util.Scanner;
@@ -24,6 +27,8 @@ public class Game {
     public void start(){
         System.out.println("Gold Rush");
         board.placeToken(1,3,new GoldToken());
+        board.placeToken(2,4, new PickaxeToken());
+        board.placeToken(3,3,new AnvilToken());
 
         Scanner scanner = new Scanner(System.in);
 
@@ -50,7 +55,7 @@ public class Game {
                         throw new Exception();
                 }
                 board.display();
-                System.out.println("GOLD: "+player.gold());
+                System.out.println("GOLD: "+player.gold.amount());
             }catch (IllegalArgumentException e) {
                 System.err.println("Cannot move outside the board");
             }catch(Exception e){}

@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8862d94-9cd8-4231-af50-e1dff0addd9b" name="Changes" comment="Sterowanie postacią, poprawa błędów" />
+    <list default="true" id="c8862d94-9cd8-4231-af50-e1dff0addd9b" name="Changes" comment="Sterowanie postacią, poprawa błędów">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/io/player/Gold.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/io/player/NoTool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/io/player/Repairable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/io/player/Shed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/io/player/Tool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/io/token/AnvilToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/io/token/PickaxeToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/io/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/io/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/io/player/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/token/EmptyToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/io/token/EmptyToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/token/Label.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/io/token/Label.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/token/PlayerToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/io/token/PlayerToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BoardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GoldTokenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GoldTokenTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PlayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PlayerTokenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PlayerTokenTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TokenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TokenTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +60,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -65,32 +87,108 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.BoardTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.GameTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.GoldTokenTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.PlayerTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.PlayerTokenTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Tests in 'gold_rush.test'.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TokenTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.gold-rush [:edu.io.Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/jakkolwiek/gold-rush&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.BoardTest.executor": "Run",
+    "Gradle.GameTest.executor": "Run",
+    "Gradle.GoldTokenTest.executor": "Run",
+    "Gradle.PickaxeTest.broken_pickaxe_doesnt_work.executor": "Run",
+    "Gradle.PickaxeTest.executor": "Run",
+    "Gradle.PickaxeTest.gainFactor_affects_collected_gold.executor": "Run",
+    "Gradle.PlayerTest.executor": "Run",
+    "Gradle.PlayerTokenTest.executor": "Run",
+    "Gradle.Tests in 'gold_rush.test'.executor": "Run",
+    "Gradle.TokenTest.executor": "Run",
+    "Gradle.gold-rush [:edu.io.Main.main()].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/jakkolwiek/gold-rush",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
+    <configuration name="PickaxeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;PickaxeTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="PickaxeTest.broken_pickaxe_doesnt_work" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;PickaxeTest.broken_pickaxe_doesnt_work&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="PickaxeTest.gainFactor_affects_collected_gold" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;PickaxeTest.gainFactor_affects_collected_gold&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="Tests in 'gold_rush.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -116,6 +214,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Tests in 'gold_rush.test'" />
+        <item itemvalue="Gradle.PickaxeTest.broken_pickaxe_doesnt_work" />
+        <item itemvalue="Gradle.PickaxeTest.gainFactor_affects_collected_gold" />
+        <item itemvalue="Gradle.PickaxeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -142,7 +243,9 @@
       <workItem from="1761073934232" duration="20000" />
       <workItem from="1761073975103" duration="82000" />
       <workItem from="1761074072702" duration="1625000" />
-      <workItem from="1761666673023" duration="16914000" />
+      <workItem from="1761666673023" duration="17741000" />
+      <workItem from="1762248109466" duration="11000" />
+      <workItem from="1762275413166" duration="20034000" />
     </task>
     <task id="LOCAL-00001" summary="Sterowanie postacią">
       <option name="closed" value="true" />

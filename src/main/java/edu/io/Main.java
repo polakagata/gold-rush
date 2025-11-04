@@ -1,11 +1,6 @@
 package edu.io;
 
-import java.util.Scanner;
-import edu.io.token.GoldToken;
-import edu.io.token.PlayerToken;
-import edu.io.token.Token;
-
-import static java.nio.file.Files.move;
+import edu.io.player.Player;
 
 
 public class Main {
