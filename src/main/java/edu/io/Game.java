@@ -1,10 +1,7 @@
 package edu.io;
 
 import edu.io.player.Player;
-import edu.io.token.AnvilToken;
-import edu.io.token.GoldToken;
-import edu.io.token.PickaxeToken;
-import edu.io.token.PlayerToken;
+import edu.io.token.*;
 
 import java.util.Scanner;
 
@@ -29,6 +26,7 @@ public class Game {
         board.placeToken(1,3,new GoldToken());
         board.placeToken(2,4, new PickaxeToken());
         board.placeToken(3,3,new AnvilToken());
+        board.placeToken(4,5, new WaterToken());
 
         Scanner scanner = new Scanner(System.in);
 
