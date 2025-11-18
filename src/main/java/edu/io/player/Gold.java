@@ -20,7 +20,7 @@ public class Gold {
     }
 
     public void gain(double amount){
-        if(amount>0){
+        if(amount>=0){
             this.amount+=amount;
         }else{
             throw new IllegalArgumentException();
@@ -28,7 +28,7 @@ public class Gold {
     }
 
     public void lose(double amount){
-        if(amount>0) {
+        if(amount>=0) {
             if(this.amount-amount>=0) {
                 this.amount -= amount;
             }else{

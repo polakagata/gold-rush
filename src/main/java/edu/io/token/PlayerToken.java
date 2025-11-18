@@ -3,6 +3,8 @@ package edu.io.token;
 import edu.io.Board;
 import edu.io.player.Player;
 
+import java.util.Objects;
+
 public class PlayerToken extends Token {
 
     int col;
@@ -55,11 +57,11 @@ public class PlayerToken extends Token {
     public PlayerToken(Player player,Board board){
         super(Label.PLAYER_TOKEN_LABEL);
 
-        this.board=board;
+        this.board= Objects.requireNonNull(board);
         Board.Coords place = board.getAvailableSquare();
         this.col = place.col();
         this.row = place.row();
-        this.player = player;
+        this.player = Objects.requireNonNull(player);
 
         this.board.placeToken(this.col, this.row,this);
     }

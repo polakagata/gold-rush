@@ -4,27 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8862d94-9cd8-4231-af50-e1dff0addd9b" name="Changes" comment="Sterowanie postacią, poprawa błędów">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/io/player/Gold.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/io/player/NoTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/io/player/Repairable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/io/player/Shed.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/io/player/Tool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/io/token/AnvilToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/io/token/PickaxeToken.java" afterDir="false" />
+    <list default="true" id="c8862d94-9cd8-4231-af50-e1dff0addd9b" name="Changes" comment="dodano narzędzia i kowadło">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/io/player/Vitals.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/io/player/VitalsValues.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/io/token/WaterToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/io/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/io/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/io/player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/token/EmptyToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/io/token/EmptyToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/io/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/player/Gold.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/io/player/Gold.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/io/player/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/token/Label.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/io/token/Label.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/token/PlayerToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/io/token/PlayerToken.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BoardTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GoldTokenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GoldTokenTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PlayerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PlayerTokenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PlayerTokenTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TokenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TokenTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,8 +54,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -95,10 +90,12 @@
     "Gradle.PickaxeTest.broken_pickaxe_doesnt_work.executor": "Run",
     "Gradle.PickaxeTest.executor": "Run",
     "Gradle.PickaxeTest.gainFactor_affects_collected_gold.executor": "Run",
+    "Gradle.PlayerTest.collecting_gold_dehydrates.executor": "Run",
     "Gradle.PlayerTest.executor": "Run",
     "Gradle.PlayerTokenTest.executor": "Run",
     "Gradle.Tests in 'gold_rush.test'.executor": "Run",
     "Gradle.TokenTest.executor": "Run",
+    "Gradle.WaterTest.amount_can_be_in_range_0_100.executor": "Run",
     "Gradle.gold-rush [:edu.io.Main.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -116,31 +113,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="PickaxeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;PickaxeTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.Tests in 'gold_rush.test'">
     <configuration name="PickaxeTest.broken_pickaxe_doesnt_work" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -189,6 +162,30 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="PlayerTest.collecting_gold_dehydrates" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;PlayerTest.collecting_gold_dehydrates&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="Tests in 'gold_rush.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -211,12 +208,37 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="WaterTest.amount_can_be_in_range_0_100" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;WaterTest.amount_can_be_in_range_0_100&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Tests in 'gold_rush.test'" />
+        <item itemvalue="Gradle.PlayerTest.collecting_gold_dehydrates" />
+        <item itemvalue="Gradle.WaterTest.amount_can_be_in_range_0_100" />
         <item itemvalue="Gradle.PickaxeTest.broken_pickaxe_doesnt_work" />
         <item itemvalue="Gradle.PickaxeTest.gainFactor_affects_collected_gold" />
-        <item itemvalue="Gradle.PickaxeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -245,7 +267,10 @@
       <workItem from="1761074072702" duration="1625000" />
       <workItem from="1761666673023" duration="17741000" />
       <workItem from="1762248109466" duration="11000" />
-      <workItem from="1762275413166" duration="20034000" />
+      <workItem from="1762275413166" duration="20198000" />
+      <workItem from="1762353924520" duration="251000" />
+      <workItem from="1763484743495" duration="8212000" />
+      <workItem from="1763495804338" duration="3984000" />
     </task>
     <task id="LOCAL-00001" summary="Sterowanie postacią">
       <option name="closed" value="true" />
@@ -263,7 +288,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761075516828</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="dodano narzędzia i kowadło">
+      <option name="closed" value="true" />
+      <created>1762295612205</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1762295612205</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,6 +316,21 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Sterowanie postacią" />
     <MESSAGE value="Sterowanie postacią, poprawa błędów" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sterowanie postacią, poprawa błędów" />
+    <MESSAGE value="dodano narzędzia i kowadło" />
+    <option name="LAST_COMMIT_MESSAGE" value="dodano narzędzia i kowadło" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.opentest4j.AssertionFailedError" package="org.opentest4j" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
