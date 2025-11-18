@@ -35,7 +35,6 @@ public class Player{
                 if(pickaxe.durability()>0){
                   amount *= pickaxe.gainFactor();
                   pickaxe.use();
-                  //System.out.print("Durability: " + pickaxe.durability() + "\n");
                 }else pickaxeToken = new EmptyToken();
             }
             this.gold.gain(amount);

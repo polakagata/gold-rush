@@ -30,6 +30,8 @@ public class Game {
 
         Scanner scanner = new Scanner(System.in);
 
+        player.vitals.setOnDeathHandler(()->System.out.println(":("));
+
         board.display();
 
         while(true){
@@ -54,9 +56,13 @@ public class Game {
                 }
                 board.display();
                 System.out.println("GOLD: "+player.gold.amount());
+                System.out.println("WATER: "+ player.vitals.hydration());
             }catch (IllegalArgumentException e) {
                 System.err.println("Cannot move outside the board");
+            }catch (IllegalStateException e ){
+                System.err.println("Chwilowo nie żyjesz. Nie możesz wykonać ruchu!");
             }catch(Exception e){}
+
         }
 
     }
