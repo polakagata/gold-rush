@@ -4,51 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24aa4fc1-74fe-478b-b869-b70964a2c1bf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="24aa4fc1-74fe-478b-b869-b70964a2c1bf" name="Changes" comment="przygotowanie pod aplikacje kliencką">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/test-report.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/test.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/Board.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/Game.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/player/Gold.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/player/NoTool.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/player/Player.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/player/Repairable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/player/Shed.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/player/Tool.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/player/Vitals.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/player/VitalsValues.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/token/AnvilToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/token/EmptyToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/token/GoldToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/token/Label.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/token/PickaxeToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/token/PlayerToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/token/PyriteToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/token/Token.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/token/WaterToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AnvilTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BoardTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GameTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GoldTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GoldTokenTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PickaxeTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PlayerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PlayerTokenTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ShedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TokenTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/VitalsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WaterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/io/net/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/io/net/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +56,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.gold-rush [:edu.io.net.Main.main()].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -104,11 +64,15 @@
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/polak/OneDrive/Pulpit/graIO/gold-rush",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "/home/olek/Projekty/zajecia/io/gold_rush_client/src/main/java/edu/io/net/Main.java",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "vue.rearranger.settings.migration": "true"
   }
@@ -132,11 +96,24 @@
       <workItem from="1737363020573" duration="88000" />
       <workItem from="1758316486347" duration="12000" />
       <workItem from="1763562013840" duration="288000" />
-      <workItem from="1764694413276" duration="118000" />
+      <workItem from="1764694413276" duration="2283000" />
     </task>
+    <task id="LOCAL-00001" summary="przygotowanie pod aplikacje kliencką">
+      <option name="closed" value="true" />
+      <created>1764694624369</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764694624369</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="przygotowanie pod aplikacje kliencką" />
+    <option name="LAST_COMMIT_MESSAGE" value="przygotowanie pod aplikacje kliencką" />
   </component>
 </project>
